@@ -1,0 +1,83 @@
+@import url('Hero.css');   
+@import url('ShopNow.css');
+@import url('Payment.css');
+@import url('Learn.css');
+@import url('getready.css');
+@import url('footer.css');
+@import url('Conatctus.css');
+@import url('index.css');
+@import url('terms.css');
+@import url('products.css');
+@import url('About.css');
+@import url('media.css');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0; 
+    padding: 0; 
+  }
+
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1000; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+    background-color: #ffe0e0;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+.close-button {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+  body{
+    background-color: #FFE3E4;
+  }
+  main {
+    background-color: #FFE3E4;
+  }
+
+  /* Optional styles for the button */
+  .back-to-top {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      padding: 10px 15px;
+      background-color: #333;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      display: none; /* Initially hidden */
+  }
+
+  .back-to-top:hover {
+      background-color: #555;
+  }
+
+  html {
+    scroll-behavior: smooth;
+}
+  

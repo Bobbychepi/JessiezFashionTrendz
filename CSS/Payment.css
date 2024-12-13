@@ -1,0 +1,35 @@
+.Payment {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0;
+}
+
+.payment-content {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Space between image and text */
+}
+
+.payment-content img {
+    object-fit: cover;
+}
+
+.payment-text {
+    max-width: 600px; 
+}
+
+.payment-text h1 {
+    font-size: 48px;
+    margin-bottom: 30px;
+    color: #545454;
+    max-width: 570px;
+    max-height: auto;
+}
+
+.payment-text p {
+    margin-bottom: 10px;
+    font-size: 18px;
+    max-width: 602px;
+    color: #636363;
+}

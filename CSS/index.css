@@ -1,0 +1,157 @@
+.navbar{
+    background-color: #FFE3E4;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+}
+
+.navbar a{
+    color: #686868; 
+    font-size: 16px; 
+    text-decoration: none;
+    font-weight: 400;
+}
+
+.navbar a:hover {
+    background: radial-gradient(circle, 
+        #7DE7EB 55%, 
+        #5CE1E6 72%, 
+        #33BBCF 100%);
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+
+.nav-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+}
+
+.nav-branding{
+    font-size: 2rem;
+}
+
+.nav-link{
+    transition: 0.7s ease;
+}
+
+
+.navbar img {
+    width: 65px;
+}
+
+.navbar img{
+    object-fit: cover;
+    animation: navpulse 2s infinite;  
+}
+
+@keyframes navpulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+.navbar a.active {
+    color: #000000; 
+}
+
+li{
+    list-style: none;
+}
+
+button{
+    padding: 10px 15px;
+    background-color: #33BBCF;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    margin-right: 20px;
+    cursor: pointer;
+  }
+
+  button:hover {
+    transition: 
+        color 0.3s ease-in-out, 
+        background-color 0.3s ease-in-out, 
+        box-shadow 0.5s ease-out,
+        transform 0.3s ease-in-out, 
+        box-shadow 0.3s ease-in-out; /* Added box-shadow to transition */
+    
+    transform: scale(1.1); /* Slightly rotate for added effect */
+    background-color: #58a9ff; 
+    color: #FFFFFF; 
+    box-shadow: 0 8px 25px rgba(17, 132, 255, 0.5); /* Deeper shadow for emphasis */
+}
+
+.hamburger{
+    display: none;
+    cursor: pointer;
+}
+
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3 ease-in-out;
+    background-color: #e5b3b5;
+}
+
+@media (max-width: 768px) {
+
+    img{
+        
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translate(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translate(-8px) rotate(-45deg);
+    }
+
+    .nav-menu {
+        display: block;
+        position: fixed;
+        right: -100%;
+        top: 70px;
+        gap: 10;
+        flex-direction: column;
+        background-color: rgb(216, 178, 178);
+        width: 100%;
+        text-align: center;
+        transition: 0.8s ease;
+        font-size: 30px;
+    }
+
+    .nav-menu a{
+        font-weight: 800;
+        font-size: 20px;
+        color: #ffffff;
+    } 
+
+    .nav-menu.active {
+        right: 0;
+    }
+}

@@ -1,0 +1,112 @@
+/* Media Queries for Tablet Screens (up to 1024px) */
+@media screen and (max-width: 1024px) {
+   
+    .Hero h1 {
+        font-size: clamp(30px, 8vw + 10px, 50px); /* Adjusted font size for tablets */
+    }
+
+    .Hero p {
+        font-size: 16px; 
+        margin-top: 10px;
+    }
+
+    .Hero img {
+        display: none; /* Show the hero image on tablets */
+    }
+
+    .Shop {
+        flex-direction: column; /* Stack the left and right sections */
+        align-items: center; /* Center items */
+        padding: 10px; /* Less padding for tablets */
+    }
+
+    .left, .right {
+        width: 100%; /* Full width for both sections */
+        padding: 10px 0; /* Padding for vertical spacing */
+    }
+
+    .getready {
+        padding: 20px; /* Less padding for tablets */
+        align-items: center; /* Center elements */
+    }
+
+    .getready h1 {
+        font-size: 1.5rem; /* Adjusted for tablets */
+    }
+
+    .getready p {
+        font-size: 0.9rem; /* Adjusted for tablets */
+    }
+
+    .Scroll h1 {
+        font-size: 18px; /* Adjusted font size for scrolling text */
+    }
+
+    .Payment img{
+        display: none;
+    }
+
+    .LearnMore img{
+        display: none;
+    }
+
+}
+
+/* Media Queries for Mobile Screens (up to 768px) */
+@media screen and (max-width: 768px) {
+    .Hero p{
+        max-width: 350px;
+        align-content: center;
+    }
+    
+    .Hero img{
+        display: none; /* Hide the hero section completely on mobile */
+    }
+
+    .Shop {
+        align-items: center; /* Center items */
+        padding: 5px; /* Less padding for mobile */
+    }
+
+    .Shop h1{
+        width: 350px;
+    }
+
+    .Payment img{
+        display: none;
+    }
+
+    .payment-section {
+        display: flex; /* Use flexbox for responsive layout */
+        flex-direction: column; /* Stack elements vertically */
+        align-items: center; /* Center elements */
+        padding: 10px; /* Add padding */
+        width: 100%; /* Full width */
+    }
+
+    .payment-section h2 {
+        font-size: 1.25rem; /* Adjust heading size */
+        margin-bottom: 10px; /* Space below heading */
+    }
+
+    .payment-section p {
+        font-size: 0.85rem; /* Adjust paragraph size */
+        text-align: center; /* Center text */
+    }
+
+    .learn-more {
+        text-align: center; /* Center the Learn More button */
+        padding: 10px; /* Add padding */
+    }
+
+    .LearnMore img{
+        display: none;
+    }
+
+    .learn-more a {
+        font-size: 0.85rem; /* Adjust font size for the button */
+        padding: 10px 20px; /* Adjust padding for button */
+        display: inline-block; /* Center the button */
+        margin-top: 10px; /* Space above button */
+    }
+}

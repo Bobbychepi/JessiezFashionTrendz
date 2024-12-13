@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jessie's Fashion Trendz - Contact Us</title>
+  <link rel="stylesheet" href="../CSS/Global.css">
+  <link rel="icon" href="../Assets/Images/Logo.png">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <img src="../Assets/Images/Logo.png" alt="Logo" class="nav-branding">
+    
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="../index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../HTML/Aboutus.html" class="nav-link">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../HTML/Contactus.html" class="nav-link">Contact Us</a>
+                </li>
+
+                <li><button onclick="window.open('https://www.takealot.com/', '_blank');">Shop Now</button></li>
+            </ul>
+    
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+
+        <script src="../Javascript/script.js"></script>   
+    </header>
+
+    <div class="contact-container">
+        <h1 style="font-size: 40px;"><span class="blue">Contact</span> Us</h1>
+        
+        <form method="post" class="contact-form" action="https://formspree.io/f/xdkoeoej" method="POST" onsubmit="clearForm()">
+            <label for="name">Name & <span class="blue">Surname</span></label>
+            <input type="text" id="name" name="name" required placeholder="Enter Your Name & Surname..">
+            
+            <label for="email"><span class="blue">Email</span> Address</label>
+            <input type="email" id="email" name="email" required placeholder="Enter Your Email..">
+            
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" required placeholder="Let us know how we can assist you.."></textarea>
+            
+            <button type="submit">Send Message</button>
+        </form>
+    
+        <div class="contact-info">
+            <p>Our Email: <a href="mailto:thandekamat41@gmail.com">thandekamat41@gmail.com</a></p>
+            <p>Our Mobile Number: <a href="tel:0794566126">079 456 6126</a></p>
+            <p>Our Address: 221 Abilia Street, Kilnerpark, Pretoria, 0816</p>
+        </div>
+    </div>
+
+
+<footer class="footer">
+    <div class="footer-content">
+        <div class="footer-section about">
+            <h2>Explore our Collection</h2>
+            <p>Give your baby the fashion they deserve with the latest trends from Jessie’s Fashion Trendz.</p>
+        </div>
+
+        <div class="footer-section links">
+            <h2>Useful Links</h2>
+            <ul>
+                <li><a href="//www.takealot.com" >Explore</a></li>
+                <li><a href="../HTML/t&c.html">Terms & Conditions</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section community">
+            <h2>Community</h2>
+            <ul>
+                <li><a href="https://www.instagram.com/thandekajessy/?utm_source=ig_web_button_share_sheet">Social Media</a></li>
+                <li><a href="../HTML/Contactus.html">Help Center</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section partner">
+            <h2>Partner</h2>
+            <ul>
+                <li><a href="../HTML/Contactus.html">Become a Partner</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2024 <span class="blue">Jessie's Fashion Trendz.</span> All Rights Reserved.</p>
+    </div>
+</footer>
+
+
+</body>
+</html>

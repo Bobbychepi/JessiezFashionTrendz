@@ -1,0 +1,83 @@
+.Hero{
+    margin-top: 3%;
+    margin-left: 6%;
+    position: relative;
+}
+
+.Hero h1 {
+    font-size: clamp(60px, 10vw + 20px, 72px);
+    color: #474747;
+    width: 767px;
+}
+
+.Hero p{
+    width: 490px;
+    color: #7e7e7e;
+    margin-top: 20px;
+}
+
+.blue{
+    background: radial-gradient(circle, 
+    #7DE7EB 55%, 
+    #5CE1E6 72%, 
+    #33BBCF 100%);
+-webkit-background-clip: text;
+color: transparent;
+}
+
+ .HeroSec{
+    display: flex;
+}
+
+.Hero .GetStarted{
+    width: 120px;
+    height: 120px;
+    margin-top: 180px;
+    margin-left: -110px;
+}
+
+.babyhands {
+    position: absolute; 
+    right: 0;          
+    top: 15px; 
+    width: 360px;
+    height: auto;
+}
+
+.Scroll {
+    overflow: hidden;
+    white-space: nowrap; 
+    margin: 3%; 
+}
+
+.Scroll h1 {
+    display: flex; 
+    animation: scroll-text 60s  infinite;
+    font-weight: 600;
+    color: #7a7a7a;
+
+}
+
+.scroll-content {
+    display: inline-block;
+    padding-right: 100px;
+    font-size: 20px;
+}
+
+@keyframes scroll-text {
+    0% {
+        transform: translateX(0); 
+    }
+    100% {
+        transform: translateX(-100%); 
+    }
+}
+
+
+
+.Scroll .blue {
+    overflow: hidden; /* Hide text overflow */
+    white-space: nowrap; /* Prevent text from wrapping */
+    text-overflow: ellipsis; /* Add ellipsis if text overflows */
+    align-content: center;
+}

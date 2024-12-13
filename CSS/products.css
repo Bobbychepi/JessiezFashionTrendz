@@ -1,0 +1,83 @@
+.card {
+    position: relative;
+    padding-top: 50px;
+    border-radius: 15px; /* Rounded corners */
+    overflow: hidden; /* Prevent overflow of child elements */
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(4, 193, 250, 0.5));
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* Softer shadow */
+    width: 100%;
+    transition: transform 0.2s, box-shadow 0.2s; /* Smooth transitions */
+    cursor: pointer; /* Change cursor to pointer */
+}
+
+.content-box {
+    background: rgba(4, 193, 250, 0.8); /* More opacity for better contrast */
+    padding: 40px 20px; /* Adjusted padding */
+    border-radius: 15px; /* Match the card's corners */
+    text-align: center; /* Center the text */
+}
+
+.card-title {
+    color: #ffffff;
+    font-size: 26px; /* Slightly larger font size */
+    font-weight: 700; /* Adjusted font weight */
+    margin-bottom: 10px; /* Space below title */
+}
+
+.card-content {
+    margin-top: 10px;
+    font-size: 14px; /* Larger font size */
+    font-weight: 500; /* Lighter weight */
+    color: #f2f2f2;
+}
+
+.coming-soon {
+    cursor: pointer;
+    margin-top: 1rem;
+    display: inline-block;
+    font-weight: 700; /* Adjusted font weight */
+    font-size: 14px; /* Larger font size */
+    text-transform: uppercase;
+    color: rgb(7, 185, 255);
+    background: #ffffff;
+    padding: 8px 12px; /* Adjusted padding */
+    border-radius: 5px; /* Rounded button */
+    transition: all 0.3s ease; /* Smooth hover transition */
+}
+
+.coming-soon:hover {
+    background: rgb(7, 185, 255); /* Change background on hover */
+    color: white; /* Change text color on hover */
+}
+
+.date-box {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    height: 70px;
+    width: 70px;
+    background: rgba(255, 255, 255, 0.9); /* Slightly transparent */
+    border: 2px solid rgb(7, 185, 255);
+    border-radius: 10px; /* Rounded corners */
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center content */
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 17px 10px -10px;
+}
+
+.date-box span {
+    display: block;
+    text-align: center;
+}
+
+.month {
+    color: rgb(4, 193, 250);
+    font-size: 10px; /* Slightly larger font size */
+    font-weight: 600; /* Adjusted weight */
+}
+
+.date {
+    font-size: 22px; /* Larger font size */
+    font-weight: 900;
+    color: rgb(4, 193, 250);
+}

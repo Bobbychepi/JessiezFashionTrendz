@@ -1,0 +1,75 @@
+.Shop {
+    display: flex; /* Aligns the left and right sections side by side */
+    justify-content: space-between; /* Provides space between the left and right sections */
+    align-items: flex-start; /* Aligns items to the top */
+    gap: 2%; /* Adds some spacing between the left and right sections */
+    padding: 20px; /* Adds padding around the entire container */
+    margin: 6%;
+}
+
+.left {
+    flex: 1; /* Allows the left section to take available space */
+    padding-right: 20px; /* Adds space between left content and the right */
+}
+
+.right {
+    flex: 1; /* Allows the right section to take available space */
+    display: flex;
+    flex-direction: column; /* Stacks each block (image + text) vertically */
+    gap: 20px; /* Adds space between the rows */
+}
+
+.left p {
+    margin-top: 3%;
+    margin-bottom: 2%;
+    max-width: 570px;
+    color: #606060;
+}
+
+.left h1 {
+    font-size: 48px;
+    color: #474747;
+}
+
+.left button {
+    margin-top: 2%;
+}
+
+/* Right section styles remain unchanged */
+.right div {
+    display: flex; /* Aligns the image and the text side by side */
+    align-items: center; /* Aligns items vertically centered */
+    gap: 15px; /* Adds space between the image and text */
+    padding: 20px;
+    border: 1px solid #ddd; /* Adds border for structure */
+    border-radius: 40px; /* Rounds corners */
+    transition: transform 0.3s ease; /* Hover animation transition */
+}
+
+.right div:hover {
+    transform: scale(1.1); /* Slightly enlarges the block on hover */
+}
+
+.right img {
+    max-width: 50px; /* Adjusts the image size */
+    height: auto; /* Keeps aspect ratio */
+}
+
+.right h2 {
+    font-size: 18px; /* Adjusts heading size */
+    margin: 0; /* Removes unnecessary margin */
+    color: #505050;
+}
+
+.right p {
+    font-size: 1em; /* Adjusts paragraph font size */
+    margin: 5px 0 0 0; /* Adds margin between the heading and paragraph */
+    color: #474747;
+}
+
+/* Hover effect for blurring non-hovered elements */
+.right:hover > div:not(:hover) {
+    filter: blur(5px); /* Blurs the non-hovered elements */
+    transform: scale(0.9); /* Shrinks non-hovered elements */
+    transition: 900ms; /* Smooth transition effect */
+}

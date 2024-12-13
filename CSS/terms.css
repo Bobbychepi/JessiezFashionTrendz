@@ -1,0 +1,64 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f7f7f7;
+}
+
+.terms-container {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.terms-container h2 {
+    color: #333;
+    margin-top: 20px;
+    font-size: 1.25em;
+    font-weight: 600;
+}
+
+.terms-container p {
+    line-height: 1.6;
+    font-size: 1em;
+    margin: 10px 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .terms-container {
+        padding: 15px;
+        margin: 20px auto;
+    }
+
+    .terms-container h2 {
+        font-size: 1.1em; /* Adjusted font size for smaller screens */
+    }
+
+    .terms-container p {
+        font-size: 0.9em; /* Adjusted font size for smaller screens */
+    }
+
+    h1 {
+        font-size: 1.5em; /* Adjusting main heading for mobile */
+        text-align: center; /* Center align the title on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 10px; /* Reduce body padding for smaller screens */
+    }
+
+    .terms-container {
+        margin: 10px auto; /* Adjust margins further for very small screens */
+    }
+
+    h1 {
+        font-size: 1.3em; /* Further adjust heading size for mobile */
+    }
+}

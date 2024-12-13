@@ -1,0 +1,94 @@
+
+  .Navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 5px;
+  }
+  
+.Navbar a {
+  color: #6d6d6d; 
+  text-decoration: none;
+  font-size: 16px; 
+  margin: 0 20px; 
+  opacity: 0.5; 
+  animation: fadeIn 0.3s forwards; 
+}
+  
+  .Navbar a:hover {
+    background: radial-gradient(circle, 
+        #7DE7EB 55%, 
+        #5CE1E6 72%, 
+        #33BBCF 100%);
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+
+.Navbar a.active {
+    color: #000000; 
+}
+
+
+.Navbar img {
+    max-height: 60px; 
+    animation: pulse 5s infinite;
+    margin-right: 50%;
+  }
+
+  /* Fade-in animation */
+@keyframes fadeIn {
+  to {
+      opacity: 1; /* Fully visible */
+      transform: translateY(0); /* Move to original position */
+  }
+}
+
+
+
+  @keyframes pulse {
+    0%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2); /* Pulses to 10% bigger at 50% of animation */
+    }
+  }
+
+  button{
+    padding: 10px 15px;
+    background-color: #33BBCF;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    margin-right: 20px;
+    cursor: pointer;
+  }
+
+  button:hover {
+    transition: 
+        color 0.3s ease-in-out, 
+        background-color 0.3s ease-in-out, 
+        box-shadow 0.5s ease-out,
+        transform 0.3s ease-in-out, 
+        box-shadow 0.3s ease-in-out; /* Added box-shadow to transition */
+    
+    transform: scale(1.1); /* Slightly rotate for added effect */
+    background-color: #58a9ff; 
+    color: #FFFFFF; 
+    box-shadow: 0 8px 25px rgba(17, 132, 255, 0.5); /* Deeper shadow for emphasis */
+}
+
+@media (max-width: 1229px) {
+  .Navbar a {
+    font-size: 14px;
+  }
+  
+}
+
+@media (max-width: 1164px) {
+  .Navbar a {
+    font-size: 13px;
+  }
+  
+}

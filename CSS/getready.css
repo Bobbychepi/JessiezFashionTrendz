@@ -1,0 +1,29 @@
+.getready {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px 0;
+    padding: 40px;
+    gap: 20px;
+    border-radius: 16px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    max-width: 1200px;
+    margin: 40px auto;
+    flex-wrap: wrap;
+}
+
+.getready h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #030303;
+    margin-bottom: 10px;
+}
+
+.getready p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin: 0;
+}
+
+
+

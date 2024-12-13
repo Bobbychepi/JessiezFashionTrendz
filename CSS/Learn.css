@@ -1,0 +1,50 @@
+.LearnMore{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0;
+}
+
+.learn-content{
+    display: flex;
+    align-items: center;
+    gap: 6%
+}
+
+.learn-txt{
+    max-width: 600px; 
+}
+
+.LearnMore p{
+    color: #353535;
+    max-width: 696px;
+    font-size: 18px;
+
+}
+
+.LearnMore h1{
+    color: #5c5c5c;
+    font-size: 45px;
+    font-weight: 600;
+}
+
+.LearnMore img{
+    object-fit: cover;
+    animation: Learnpulse 2s infinite;  
+}
+
+@keyframes Learnpulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.LearnMore button{
+    margin-top: 30px;
+}
